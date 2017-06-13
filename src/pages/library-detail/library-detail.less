@@ -1,0 +1,85 @@
+.h2{
+  margin-bottom:10rpx;
+  font-size: 35rpx;      
+}
+.container{
+  font-size: 28rpx;
+  padding:50rpx 20rpx;
+  display: flex;
+  flex-direction:column;
+  .head {
+    display: flex;    
+    cursor: pointer;
+
+    .poster {
+      width: 106rpx;
+      height: 160rpx;
+      margin-right: 20rpx;
+    }
+
+    .meta {        
+        flex: 1;
+        display: flex;
+        flex-direction:column;
+        justify-content:space-between;
+        .title,
+        {
+            display: block;
+            margin-bottom: 15rpx;
+            font-size: 35rpx;
+        }
+    }    
+  }
+  .describe{
+    margin-top: 40rpx;
+    padding-bottom: 40rpx;
+    box-sizing:content-box;
+    border-bottom: 1rpx solid black;
+  }
+  .books-wraper{
+    margin-top: 40rpx;
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction:column;
+    .special-text{
+      display: flex;
+      align-items: flex-end;
+      .bigger-text{
+        font-size: 50rpx;
+        margin-right: 10rpx;
+        margin-left: 10rpx;
+      }
+    }
+    .books{
+      margin-top:20rpx;
+      display: flex;
+      flex-flow: row wrap;
+      align-content: flex-start;
+    }
+  }
+}
+
+.item {
+  flex: 0 0 33%;  
+  padding: 20rpx;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  flex-direction:column;
+  align-items:center;
+  .img-txt{
+    display: flex;
+    align-items: flex-end;
+    .book-img {
+      width: 90rpx;
+      height: 90rpx;
+      .special-text{
+        display: flex;
+        align-items: flex-end;
+        .bigger-text{
+          font-size: 40rpx;
+        }
+      }
+    }
+  }  
+}

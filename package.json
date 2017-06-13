@@ -1,32 +1,22 @@
 {
-  "name": "weapp-demo",
-  "version": "0.1.0",
-  "description": "A demo application for wechat weapp runtime",
+  "name": "books100",
+  "version": "1.0.0",
+  "description": "A weapp for books management",
   "scripts": {
     "lint": "gulp lint",
     "watch": "gulp watch",
     "generate": "gulp generate",
     "build": "cross-env NODE_ENV=production gulp build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/zce/weapp-demo.git"
-  },
+  }, 
   "keywords": [
     "weapp",
     "weapp",
     "boilerplate",
     "wechat",
     "weixin",
-    "xiaochengxu",
-    "zce",
-    "iceStone",
-    "wedn",
-    "wedn.net",
-    "micua",
-    "micua.com"
+    "xiaochengxu"
   ],
-  "author": "iceStone <ice@micua.com> (https://www.micua.com/)",
+  "author": "dengmaofei",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/zce/weapp-demo/issues"

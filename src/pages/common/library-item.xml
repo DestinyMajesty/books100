@@ -1,0 +1,12 @@
+<!-- 渲染普通的单项数据 -->
+<template name="libary-item">
+  <navigator url="../libary-detail/libary-detail?id={{ item.id }}">
+    <view class="item">
+      <image class="poster" src="{{ item.images}}"/>
+      <view class="meta">
+        <view  class="title">第一个书架</view>
+        <view  class="details">啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦地地道道的多多多多多多多多多</view>
+      </view>
+    </view>
+  </navigator>
+</template>

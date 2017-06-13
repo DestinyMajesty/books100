@@ -1,0 +1,57 @@
+  <scroll-view class="container" scroll-y >
+    <view class="head">
+      <image class="poster" src="../../images/book-img.png"/>
+      <view class="meta">
+        <text  class="title">佣兵天下</text>
+        <text  >邓茂菲 拉克丝</text>
+        <text class="common-text"> 你的身影与我如此相似,仿佛无声哭泣回荡心胸;纵然一无所知更为幸福
+        </text>
+        <view class="special-text">          
+          <text class="bigger-text">8.8</text>
+          <text>分</text>
+        </view>
+      </view>
+    </view>
+    <view class="quantity">
+      <view class="meta">
+        <text>总数:</text>
+        <view class="special-text">          
+          <text class="bigger-text">2</text>
+          <text>本</text>
+        </view>
+      </view>      
+      <view class="meta">
+        <text>剩余本数:</text>
+        <view class="special-text">          
+          <text class="bigger-text">0</text>
+          <text>本</text>
+        </view>
+      </view> 
+    </view>
+    <view class="borrow-info">      
+        <view class="h2">借阅信息 </view>      
+      <view class="borrows">
+        <template is="borrow-item" data="{{ item }}"/> 
+        <template is="borrow-item" data="{{ item }}"/> 
+        <template is="borrow-item" data="{{ item }}"/> 
+        <template is="borrow-item" data="{{ item }}"/>
+        <template is="borrow-item" data="{{ item }}"/>
+        <template is="borrow-item" data="{{ item }}"/>
+        <template is="borrow-item" data="{{ item }}"/>
+        <template is="borrow-item" data="{{ item }}"/>
+        <template is="borrow-item" data="{{ item }}"/>
+        <template is="borrow-item" data="{{ item }}"/>
+      </view>
+    </view>
+  </scroll-view>
+
+  <!-- 借阅信息的模板 -->
+<template name="borrow-item">
+  <view class="item">             
+          <text>借阅人：拉克丝克莱因</text>
+          <text>归还时间：2017-5-4</text>   
+  </view>
+</template>
+
+
+

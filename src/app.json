@@ -3,12 +3,15 @@
   // First is default to view
   // https://mp.weixin.qq.com/debug/wxadoc/dev/framework/config.html#pages
   "pages": [
-    "pages/splash/splash",
-    "pages/board/board",
-    "pages/list/list",
-    "pages/item/item",
-    "pages/search/search",
-    "pages/profile/profile"
+    // "pages/splash/splash",
+    // "pages/board/board",
+    // "pages/list/list",
+    // "pages/item/item",
+    // "pages/search/search",
+    // "pages/profile/profile",
+    "pages/library/library",
+    "pages/library-detail/library-detail",
+    "pages/book-detail/book-detail"
     // Dont remove this comment
   ],
   // Window configuration
@@ -22,7 +25,7 @@
     "navigationBarTextStyle": "white",
     // 类型：String；默认值：无
     // 导航栏标题文字内容
-    "navigationBarTitleText": "电影 « 豆瓣",
+    "navigationBarTitleText": "百本书",
     // 类型：HexColor；默认值：#ffffff
     // 窗口的背景色
     "backgroundColor": "#000000",
@@ -43,17 +46,11 @@
     "backgroundColor": "#f5f5f5",
     "list": [
       {
-        "text": "榜单",
-        "pagePath": "pages/board/board",
-        "iconPath": "images/board.png",
-        "selectedIconPath": "images/board-actived.png"
-      },
-      {
-        "text": "搜索",
-        "pagePath": "pages/search/search",
-        "iconPath": "images/search.png",
-        "selectedIconPath": "images/search-actived.png"
-      },
+        "text": "书架",
+        "pagePath": "pages/library/library",
+        "iconPath": "images/library-tab.png",
+        "selectedIconPath": "images/library-tab.png"
+      },     
       {
         "text": "我的",
         "pagePath": "pages/profile/profile",

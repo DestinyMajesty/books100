@@ -1,0 +1,59 @@
+<!-- 可用组件：https://mp.weixin.qq.com/debug/wxadoc/dev/component/ -->
+  <scroll-view class="container" scroll-y >
+    <view class="head">
+      <image class="poster" src="../../images/library-tab.png"/>
+      <view class="meta">
+        <view  class="title">第一个书架</view>
+        <text>创建者：邓茂菲</text>
+        <text>关注数：25</text>
+      </view>
+    </view>
+    <view class="describe">
+      <view class="h2">书架简介：</view>
+      <text>
+      你的身影与我如此相似,仿佛无声哭泣回荡心胸;纵然一无所知更为幸福, 我却一定无法为之满足;即使眼前唯有漫寞长夜, 也只愿坚持自己的抉择;你的步伐与我如此相似。
+      </text>
+    </view>
+    <view class="books-wraper">
+      <view class="special-text">
+        <text>书架藏书： </text>
+        <text class="bigger-text">78</text>
+        <text>本</text>
+      </view>
+      <view class="books">
+        <template is="book-item" data="{{ item }}"/> 
+        <template is="book-item" data="{{ item }}"/> 
+        <template is="book-item" data="{{ item }}"/> 
+        <template is="book-item" data="{{ item }}"/> 
+        <template is="book-item" data="{{ item }}"/> 
+        <template is="book-item" data="{{ item }}"/> 
+        <template is="book-item" data="{{ item }}"/> 
+        <template is="book-item" data="{{ item }}"/> 
+        <template is="book-item" data="{{ item }}"/> 
+        <template is="book-item" data="{{ item }}"/> 
+        <template is="book-item" data="{{ item }}"/> 
+        <template is="book-item" data="{{ item }}"/> 
+        <template is="book-item" data="{{ item }}"/> 
+        <template is="book-item" data="{{ item }}"/> 
+        <template is="book-item" data="{{ item }}"/> 
+        <template is="book-item" data="{{ item }}"/> 
+      </view>
+    </view>
+  </scroll-view>
+
+  <!-- 图书的模板 -->
+<template name="book-item">
+  <navigator class="item" url="../book-detail/book-detail?id={{ item.id }}">
+      <view class="img-txt">       
+        <image class="book-img" src="{{item.img}}"/>
+        <view class="special-text">        
+          <text class="bigger-text">12</text>
+          <text>本</text>  
+        </view>
+      </view>   
+      <text>佣兵天下德玛西亚大冒险</text>        
+      
+    
+  </navigator>
+</template>
+
