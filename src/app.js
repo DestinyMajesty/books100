@@ -12,11 +12,7 @@ const wechat = require('./utils/wechat.js')
  */
 const douban = require('./utils/douban.js')
 
-/**
- * Baidu API 模块
- * @type {Object}
- */
-const baidu = require('./utils/baidu.js')
+
 
 App({
   /**
